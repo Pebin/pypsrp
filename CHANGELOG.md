@@ -1,8 +1,10 @@
 # Changelog
 
-## 1.0.0 - TBD
+## 0.5.0 - TBD
 
-* Dropped support for Python 2.6 and Python 3.4
+* Dropped support for Python 2.6 and Python 3.4.
+* Support endpoints that only have `Kerberos` enabled and not `Negotiate`.
+* On Linux, use Kerberos if the `auto` auth provider is specified and no username or password is set. There is still no `NTLM` fallback but `Kerberos` is ideal in this scenario.
 
 
 ## 0.4.0 - 2019-09-19
